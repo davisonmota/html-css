@@ -9,11 +9,30 @@
 </head>
 
 <body>
-  <h1>Usando links externos</h1>
+  <h1>Usando links</h1>
+
+  <h2>Links esternos</h2>
   <p>
-    <!-- target="_blank" para abrir o link em um nova aba; rel="external" diz que a relação é do tipo externa-->
+    <!-- target="_blank" para abrir o link em um nova aba; rel="external" diz que a relação externa-->
     Você pode acessar o meu <a href="https://github.com/davisonmota" target="_blank" rel="external">repositório público
       no GitHub</a>.
+  </p>
+  <hr>
+
+  <h2>Links internos</h2>
+  <p>
+    Faz relação com páginas internas, que pertencem ao projeto.
+  </p>
+  <p>
+    <!-- rel="next" indica a próxima página na navegação e rel="prev" indica a página anterior na navegação-->
+    Está é a primeiro pagina do site. Se vocẽ quiser pode acessar a também a minha <a href="page02.html"
+      rel="next">segunda
+      página.</a>
+  </p>
+
+  <p>
+    <!-- rel="nofollow" significa não siga, ajuda os motores de busca. Alguns exemplos de uso são para fazer referências à sites patrocinados ou à fontes sem o seu aval, sem a sua confiança ...-->
+    Está página é patrocinada por <a href="xyz.html" rel="nofollow">XYZ</a>.
   </p>
 </body>
 
