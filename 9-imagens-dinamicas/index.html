@@ -7,9 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imagens Dinâmicas</title>
 </head>
+<h1>Trabalhando com Imagens Dinâmicas</h1>
+<p>
+  Tente abri esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho da janela do seu
+  navegador.
+</p>
 
 <body>
 
+  <picture>
+    <source media="(max-width: 600px)" srcset="imagens/imagen300.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/imagen700.png" type="image/png">
+    <img src="imagens/imagen1000.png" alt="Imagem G">
+
+    <!-- 
+    <source media="(min-width:1050px )" srcset="imagens/imagen1000.png" type="image/png">
+    <source media="(min-width:750px )" srcset="imagens/imagen700.png" type="image/png">
+
+    <img src="imagens/imagen300.png" alt="Imagem P"> -->
+
+  </picture>
 </body>
 
-</html> 
+</html>
