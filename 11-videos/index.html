@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com Vídeos</title>
+</head>
+
+<body>
+  <h1>Vídeos</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsa et officia autem minima dignissimos eos. Eos
+    error ipsum blanditiis esse. Corporis facere sint dolorum non natus at vero accusantium?
+  </p>
+
+  <!-- <video src="midias/skyscrapers.mp4" controls preload="metadata" width="400"></video> -->
+
+
+  <!-- Não indicado! -->
+  <video controls width="400" poster="imagens/capa.jpg" preload="metadata">
+    <!-- Vai tentar carregar nessa ordem, primeiro vai tentar carregar o primeiro formato, se não conseguir vai tentar o abaixo, e assim por diante. Por isso a ordem importa. -->
+    <source src="midias/skyscrapers.mp4" type="video/mp4">
+    <source src="midias/skyscrapers.m4v" type="video/mp4">
+    <source src="midias/skyscrapers.webm" type="video/webm">
+    <source src="midias/skyscrapers.ogv" type="video/ogg">
+  </video>
+</body>
+
+</html>

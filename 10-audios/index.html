@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com Áudios</title>
+</head>
+
+<body>
+  <h1>Reproduzindo Áudios</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tempore, voluptates excepturi illum
+    necessitatibus dolorem iste molestiae quod qui quis vel cupiditate! Doloribus, eum perspiciatis hic nam aliquam
+    ducimus iure.
+  </p>
+  <a href="midias/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg" target="_blank">Baixer o arquivo
+    MP3.</a></p>
+  <!--  
+    <audio src="midias/happy-mistake.mp3" controls autoplay></audio> 
+  -->
+
+  <!-- controls para habilitar os controles -->
+  <audio controls preload="metadata">
+    <!-- Vai tentar carregar nessa ordem, primeiro vai tentar carregar o primeiro formato, se não conseguir vai tentar o abaixo, e assim por diante. Por isso a ordem importa. -->
+    <source src="midias/happy-mistake.mp3" type="audio/mpeg">
+    <source src="midias/happy-mistake.ogg" type="audio/ogg">
+    <!-- <source src="midias/happy-mistake.wav" type="audio/wav"> -->
+    <p>Infelimente o seu navegador não consegue reproduzir áudio.<a href="midias/happy-mistake.mp3"
+        download="happy-mistake.mp3" type="audio/mpeg" target="_blank">Baixer o arquivo
+        MP3.</a></p>
+  </audio>
+</body>
+
+</html>
