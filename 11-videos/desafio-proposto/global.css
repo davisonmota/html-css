@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+section {
+  width: 500px;
+  margin: auto;
+}
+
+iframe {
+  margin-bottom:20px;
+}
+
+.cursoCompleto {
+  text-decoration: none;
+  color: white;
+}
+
+.cursoCompleto:hover {
+  text-decoration: underline;
+}
+
+.voltar {
+  margin: 20px;
+}
